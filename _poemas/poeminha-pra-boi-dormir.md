@@ -1,7 +1,7 @@
 ---
 type: poemas
 imagem: /assets/images/uploads/poema1.jpg
-titulo: Poeminha pra boi dormir
+titulo: poeminha pra boi dormir
 conteudo: |-
   É fato que a gente
   Se diverte sempre à beça
