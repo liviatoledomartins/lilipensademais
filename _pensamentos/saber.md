@@ -2,7 +2,7 @@
 type: pensamentos
 imagem: /assets/images/uploads/arte_digital_circulos.png
 titulo_pt: Saber!!!
-titulo_en: Wonder!!!
+titulo_en: To Know!!!
 texto_pt: >-
   Recentemente despertou em mim uma fome de saber que há muito tempo dormia.
   Re-acordei a minha curiosidade sobre a natureza das coisas e o resultado é que
