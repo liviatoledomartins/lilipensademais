@@ -1,0 +1,14 @@
+{% assign item = include.item %}
+{% assign card_title = item.titulo | default: item.titulo_pt %}
+<a class="card-horizontal" href="{{ item.url | relative_url }}">
+  <span class="card-horizontal-image" style="background-image: url('{{ item.imagem | relative_url }}');" role="img" aria-label="{{ card_title }}"></span>
+  <span class="card-horizontal-info">
+    <span class="card-horizontal-title">{{ card_title }}</span>
+    {% if item.data %}
+      {% assign mnum = item.data | date: "%-m" | plus: 0 %}
+      {% assign midx = mnum | minus: 1 %}
+      {% assign mnome = site.data.meses[midx] %}
+      <span class="card-date">{{ item.data | date: "%d" }} de {{ mnome }} de {{ item.data | date: "%Y" }}</span>
+    {% endif %}
+  </span>
+</a>

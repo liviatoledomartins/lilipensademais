@@ -1,0 +1,75 @@
+backend:
+  name: github
+  repo: liviatoledomartins/lilipensademais
+  branch: main
+  base_url: https://SUBSTITUIR-PELO-SEU-WORKER.workers.dev
+  auth_endpoint: auth
+
+publish_mode: simple
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+locale: "pt"
+
+collections:
+  - name: "poemas"
+    label: "🌷 Poemas"
+    label_singular: "Poema"
+    folder: "_poemas"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: titulo
+    summary: "{{titulo}}"
+    fields:
+      - { label: "Categoria", name: "type", widget: "hidden", default: "poemas" }
+      - { label: "Imagem", name: "imagem", widget: "image", required: true, hint: "A imagem será exibida quadrada na estante e cortada como faixa na página do poema." }
+      - { label: "Título", name: "titulo", widget: "string", required: true }
+      - { label: "Texto do poema", name: "conteudo", widget: "text", required: true, hint: "As quebras de linha e estrofes que você digitar aqui serão preservadas exatamente como escritas." }
+      - { label: "Data de publicação", name: "data", widget: "datetime", default: "{{now}}", required: true }
+      - { label: "Assinatura (opcional — deixe em branco para usar a assinatura padrão)", name: "assinatura", widget: "image", required: false }
+
+  - name: "pensamentos"
+    label: "💭 Pensamentos"
+    label_singular: "Pensamento"
+    folder: "_pensamentos"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: titulo_pt
+    summary: "{{titulo_pt}}"
+    fields:
+      - { label: "Categoria", name: "type", widget: "hidden", default: "pensamentos" }
+      - { label: "Imagem", name: "imagem", widget: "image", required: true, hint: "A imagem será exibida quadrada na estante e cortada como faixa na página do pensamento." }
+      - { label: "Título (Português)", name: "titulo_pt", widget: "string", required: true }
+      - { label: "Título (English)", name: "titulo_en", widget: "string", required: true }
+      - { label: "Texto (Português)", name: "texto_pt", widget: "markdown", required: true, buttons: ["bold", "italic"], modes: ["rich_text"] }
+      - { label: "Texto (English)", name: "texto_en", widget: "markdown", required: true, buttons: ["bold", "italic"], modes: ["rich_text"] }
+      - { label: "Data de publicação", name: "data", widget: "datetime", default: "{{now}}", required: true }
+      - { label: "Assinatura (opcional — deixe em branco para usar a assinatura padrão)", name: "assinatura", widget: "image", required: false }
+
+  - name: "about"
+    label: "Sobre mim"
+    files:
+      - name: "about"
+        label: "Página Sobre mim"
+        file: "about/index.html"
+        fields:
+          - { label: "Texto sobre mim", name: "texto", widget: "text" }
+          - label: "Galeria de fotos"
+            name: "fotos"
+            widget: "list"
+            required: false
+            field: { label: "Foto", name: "imagem", widget: "image" }
+
+  - name: "settings"
+    label: "Configurações"
+    files:
+      - name: "settings"
+        label: "Configurações globais"
+        file: "_data/settings.yml"
+        fields:
+          - { label: "Nome exibido", name: "author_name", widget: "string" }
+          - { label: "Frase curta (opcional, aparece embaixo do nome na home)", name: "tagline", widget: "string", required: false }
+          - { label: "Foto principal (aparece na home)", name: "author_photo", widget: "image" }
+          - { label: "Assinatura padrão", name: "signature_image", widget: "image" }

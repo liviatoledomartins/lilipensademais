@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section class="about-page">
+  <h1 class="category-title">Sobre mim</h1>
+  <div class="about-text">
+    {{ page.texto | markdownify }}
+  </div>
+  {% if page.fotos and page.fotos.size > 0 %}
+  <div class="about-gallery">
+    {% for foto in page.fotos %}
+      <div class="about-gallery-item">
+        <img src="{{ foto.imagem | relative_url }}" alt="Foto de {{ site.data.settings.author_name }}">
+      </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>

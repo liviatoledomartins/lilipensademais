@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#e6def7"/>
+  <circle cx="200" cy="160" r="70" fill="#fff" opacity="0.6"/>
+  <path d="M90 320 Q200 220 310 320 Z" fill="#fff" opacity="0.6"/>
+  <text x="200" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#6f6578">substitua sua foto no painel</text>
+</svg>

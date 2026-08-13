@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="hero-photo-wrap">
+    <img class="hero-photo" src="{{ site.data.settings.author_photo | relative_url }}" alt="Foto de {{ site.data.settings.author_name }}">
+  </div>
+  <h1 class="site-title">{{ site.title }}</h1>
+  {% if site.data.settings.tagline and site.data.settings.tagline != "" %}
+    <p class="tagline">{{ site.data.settings.tagline }}</p>
+  {% endif %}
+  <a class="about-link" href="{{ '/about/' | relative_url }}">Sobre mim →</a>
+</section>
+
+{% include shelf.html collection="poemas" heading="Poemas" limit=5 see_all_url="/poemas/" empty_message="Em breve, novos poemas." %}
+{% include shelf.html collection="pensamentos" heading="Pensamentos" limit=5 see_all_url="/pensamentos/" empty_message="Em breve, novos pensamentos." %}

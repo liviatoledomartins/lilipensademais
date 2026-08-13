@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% assign items = site[page.category_key] | sort: 'data' | reverse %}
+<section class="category-page">
+  <h1 class="category-title">{{ page.category_title }}</h1>
+  {% if items.size == 0 %}
+    <p class="empty-shelf">{{ page.empty_message | default: "Nenhum texto publicado ainda." }}</p>
+  {% else %}
+    <div class="category-list">
+      {% for item in items %}
+        {% include card-horizontal.html item=item %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>

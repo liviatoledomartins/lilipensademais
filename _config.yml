@@ -1,0 +1,45 @@
+title: "lili pensa demais"
+description: "um pequeno cantinho pessoal para poemas e pensamentos"
+url: "https://liviatoledomartins.github.io"
+baseurl: "/lilipensademais"
+lang: "pt-BR"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  poemas:
+    output: true
+    permalink: /poemas/:slug/
+  pensamentos:
+    output: true
+    permalink: /pensamentos/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "poemas"
+    values:
+      layout: "poema"
+  - scope:
+      path: ""
+      type: "pensamentos"
+    values:
+      layout: "pensamento"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor

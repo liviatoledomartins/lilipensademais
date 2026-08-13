@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>O que você quer escrever hoje? · lili pensa demais</title>
+  <meta name="robots" content="noindex" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(160deg, #fdf6f9 0%, #f3edfb 50%, #eef8f2 100%);
+      font-family: "Quicksand", sans-serif;
+      color: #3a3342;
+      padding: 24px;
+    }
+    .box { max-width: 560px; text-align: center; }
+    h1 { font-family: "Playfair Display", serif; font-size: clamp(1.6rem, 5vw, 2.3rem); margin-bottom: 40px; }
+    .options { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+    .option {
+      flex: 1 1 200px;
+      text-decoration: none;
+      color: inherit;
+      background: #fff;
+      border-radius: 24px;
+      padding: 32px 20px;
+      box-shadow: 0 8px 24px rgba(120,100,140,0.14);
+      transition: transform 0.2s ease;
+      font-weight: 600;
+    }
+    .option:hover { transform: translateY(-4px); }
+    .option .emoji { display: block; font-size: 2.6rem; margin-bottom: 12px; }
+    .back { display: inline-block; margin-top: 44px; color: #6f6578; text-decoration: none; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>o que você quer escrever hoje?</h1>
+    <div class="options">
+      <a class="option" href="../#/collections/poemas/new"><span class="emoji">🌷</span>Poema</a>
+      <a class="option" href="../#/collections/pensamentos/new"><span class="emoji">💭</span>Pensamento</a>
+    </div>
+    <a class="back" href="../">ver, editar ou excluir textos já publicados →</a>
+  </div>
+</body>
+</html>

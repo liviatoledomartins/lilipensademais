@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="text-page pensamento-page">
+  <div class="hero-image" style="background-image: url('{{ page.imagem | relative_url }}');">
+    <div class="hero-overlay"></div>
+    <h1 class="hero-title" data-pt="{{ page.titulo_pt }}" data-en="{{ page.titulo_en }}">{{ page.titulo_pt }}</h1>
+  </div>
+  <div class="lang-switch" role="group" aria-label="Escolher idioma do texto">
+    <button type="button" class="lang-btn active" data-lang="pt" aria-pressed="true">🇧🇷 PT</button>
+    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">🇺🇸 EN</button>
+  </div>
+  <div class="text-content">
+    <div class="pensamento-text">
+      <div class="lang-block lang-pt">{{ page.texto_pt | markdownify }}</div>
+      <div class="lang-block lang-en" hidden>{{ page.texto_en | markdownify }}</div>
+    </div>
+    <div class="signature">
+      <img src="{{ page.assinatura | default: site.data.settings.signature_image | relative_url }}" alt="Assinatura de {{ site.data.settings.author_name }}">
+    </div>
+  </div>
+</article>

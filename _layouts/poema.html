@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="text-page poema-page">
+  <div class="hero-image" style="background-image: url('{{ page.imagem | relative_url }}');">
+    <div class="hero-overlay"></div>
+    <h1 class="hero-title">{{ page.titulo }}</h1>
+  </div>
+  <div class="text-content">
+    <div class="poema-text">{{ page.conteudo | newline_to_br }}</div>
+    <div class="signature">
+      <img src="{{ page.assinatura | default: site.data.settings.signature_image | relative_url }}" alt="Assinatura de {{ site.data.settings.author_name }}">
+    </div>
+  </div>
+</article>

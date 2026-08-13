@@ -1,0 +1,6 @@
+{% assign item = include.item %}
+{% assign card_title = item.titulo | default: item.titulo_pt %}
+<a class="card-square" href="{{ item.url | relative_url }}">
+  <span class="card-square-image" style="background-image: url('{{ item.imagem | relative_url }}');" role="img" aria-label="{{ card_title }}"></span>
+  <span class="card-square-title">{{ card_title }}</span>
+</a>
