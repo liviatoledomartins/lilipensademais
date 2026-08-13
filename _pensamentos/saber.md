@@ -51,5 +51,5 @@ texto_en: >-
 
 
   I want to live with my head in the clouds and, at the same time, my feet on the ground. I could never stop being a dreamer (not even if I wanted to!), but I now feel more inclined to pay attention precisely to what has ceased to seem magical to me. To the spectacles that are happening around me all the time without me noticing. And sometimes it is precisely in appreciating the moments of everyday life that I come a little closer to understanding the secrets behind them.
-data: 2026-08-13T14:39:00.000-03:00
+data: 2026-06-20T14:39:00.000-03:00
 ---
