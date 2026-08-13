@@ -2,7 +2,7 @@ backend:
   name: github
   repo: liviatoledomartins/lilipensademais
   branch: main
-  base_url: https://SUBSTITUIR-PELO-SEU-WORKER.workers.dev
+  base_url: https://lili-pensa-demais-oauth.liviatoledomartins.workers.dev
   auth_endpoint: auth
 
 publish_mode: simple
