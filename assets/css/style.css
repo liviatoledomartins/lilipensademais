@@ -14,6 +14,8 @@
   --color-text: #3a3342;
   --color-text-soft: #6f6578;
   --color-border: #efe6ef;
+  --color-coral: #ffb9a3;
+  --color-turquoise: #a8e6dc;
 
   --font-display: "Playfair Display", Georgia, serif;
   --font-body: "Quicksand", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -67,6 +69,10 @@ a { color: inherit; }
 .doodle-spiral { top: 45%; right: 3%; color: var(--color-lilac); animation-delay: 2s; }
 .doodle-heart  { bottom: 20%; right: 10%; color: var(--color-pink); animation-delay: 1.6s; }
 .doodle-wave   { top: 60%; left: 2%; color: var(--color-yellow); animation-delay: 0.3s; }
+.doodle-planet     { top: 30%; left: 90%; color: var(--color-turquoise); opacity: 0.6; animation-delay: 0.9s; }
+.doodle-sun        { bottom: 6%;  left: 45%; color: var(--color-coral); opacity: 0.55; animation-delay: 1.4s; }
+.doodle-swirl      { top: 75%; right: 6%; color: var(--color-turquoise); opacity: 0.55; animation-delay: 2.3s; }
+.doodle-flowerpop  { top: 4%;  left: 42%; color: var(--color-coral); opacity: 0.5; animation-delay: 0.5s; }
 
 @keyframes doodle-float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
