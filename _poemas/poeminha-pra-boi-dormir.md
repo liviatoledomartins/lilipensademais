@@ -3,7 +3,7 @@ type: poemas
 imagem: /assets/images/uploads/poema1.jpg
 titulo: poeminha pra boi dormir
 conteudo: |-
-  É fato que a gente
+  É fato que a gente 
   Se diverte sempre à beça
   Mas se eu tropeço, caio e quebro
   Você me ajuda a juntar as peças
