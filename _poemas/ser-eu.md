@@ -1,7 +1,7 @@
 ---
 type: poemas
 imagem: /assets/images/uploads/dapo.jpg
-titulo: ser eu
+titulo: a sombra
 conteudo: |-
   Quem sou eu nesse universo?
   Qual é meu papel no mundo?
