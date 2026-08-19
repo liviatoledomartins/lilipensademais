@@ -2,7 +2,7 @@
 type: poemas
 imagem: /assets/images/uploads/dapo.jpg
 titulo: a sombra
-conteudo: |-
+conteudo: |
   Quem sou eu nesse universo?
   Qual é meu papel no mundo?
   Qualquer pessoa com quem converso
@@ -25,10 +25,15 @@ conteudo: |-
 
   Mas chega disso, quero saber
   Quem é que sou eu de verdade?
-  Quem era Livia antes de se perder?
-  Me restou dela só saudade?
+  Quem era eu antes de me perder?
+  Restou da minha essência só saudade?
 
-  Dentro de mim lutam sombra e luz
+  Escondidos em minha sombra eu descobri
+  O que não tenho coragem para ser
+  E o que não me permiti sentir
+  Em minha ânsia de pertencer
+
+  Agora dentro de mim lutam sombra e luz
   Procuro acolher os dois lados
   Esse processo me conduz
   A curar traumas do passado
@@ -36,11 +41,11 @@ conteudo: |-
   Quero ser quem eu nasci para ser
   Antes de me preocupar com o que os outros pensam
   Gastar um tempo para me conhecer
-  Lembrar das histórias que me atravessam
+  Ouvir o que minhas emoções expressam
 
-  Sei que agradar a todos eu não posso
-  Mas isso não é problema meu
-  Penso o que penso e gosto do que gosto
-  Porque o que eu quero mesmo é ser mais eu!
+  Já sei que agradar a todos eu não posso
+  E isso não é problema meu
+  Pois penso o que penso e gosto do que gosto
+  E o que eu quero mesmo agora é ser mais eu!
 data: 2026-08-15T21:58:00.000-03:00
 ---
