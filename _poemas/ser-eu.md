@@ -6,7 +6,7 @@ conteudo: |
   Quem sou eu nesse universo?
   Qual é meu papel no mundo?
   Qualquer pessoa com quem converso
-  Parece já saber disso tudo
+  Parece já ter entendido tudo
 
   Fui aprendendo a ser gente 
   Tentando e errando, sem manual
